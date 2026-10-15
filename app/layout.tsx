@@ -1,23 +1,8 @@
 import type { Metadata, Viewport } from 'next';
-import { Playfair_Display, Lato } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
-
-// 1. Optimize Fonts with next/font
-const playfair = Playfair_Display({ 
-  subsets: ['latin'],
-  variable: '--font-serif', // CSS variable for Tailwind
-  display: 'swap',
-});
-
-const lato = Lato({ 
-  weight: ['300', '400', '700'],
-  subsets: ['latin'],
-  variable: '--font-sans', // CSS variable for Tailwind
-  display: 'swap',
-});
 
 // 2. Metadata Configuration
 export const metadata: Metadata = {
@@ -53,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`scroll-smooth ${playfair.variable} ${lato.variable}`}>
+    <html lang="en" className="scroll-smooth">
       <body className="font-sans bg-forest-base text-forest-text antialiased selection:bg-forest-gold selection:text-forest-base">
         <Navbar />
         <main className="min-h-screen relative flex flex-col">

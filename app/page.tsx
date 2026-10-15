@@ -24,7 +24,7 @@ export default function Home() {
       <Hero
   title="A Peaceful Escape"
   subtitle="Your quiet sanctuary amidst the trees, where nature sets the pace of life."
-  backgroundImage="/images/hero/the_rain_tree_hero_swimming_pool.jpg"
+  backgroundImage="/images/Home page.jpeg"
 />
 
       {/* --- SECTION 2: INTRO (bg-forest-medium) --- */}
